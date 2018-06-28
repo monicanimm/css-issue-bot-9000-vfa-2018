@@ -4,7 +4,7 @@ RSpec.describe 'styling' do
   context 'within style.css' do
     it 'corrects the body background declaration' do
       selector = parsed_css.find_by_selector('body')[0]
-      expect(selector).to include("background: pink;"), "Missing properly formatted body declaration"
+      expect(selector).to include("background-color: pink;"), "Missing properly formatted body declaration"
     end
     
     it 'corrects the h1 font size declaration' do
